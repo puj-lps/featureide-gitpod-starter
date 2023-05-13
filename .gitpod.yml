@@ -15,16 +15,10 @@ ports:
 
 
 # Comandos a ejecutar al inicio del proyecto
-tasks:
-  - name: Instala Spring Boot
-    before: sdk install springboot 
-
-  - name: Compila proyecto sin ejecutar pruebas
-    before: sdk default java 17.0.6.fx-zulu
-    init: ./mvnw package -DskipTests 
-
-  - name: Ejecuta FeaureIDE
-    command: /opt/eclipse/eclipse -data ./workspace &
+# tasks:
+#
+#  - name: Ejecuta FeaureIDE
+#    command: /opt/eclipse/eclipse -data ./workspace &
 
 # Extensiones
 vscode:
