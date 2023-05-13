@@ -5,8 +5,9 @@
 # Uso de imagen de Docker específica
 # ver: https://hub.docker.com/u/gitpod
 # image: gitpod/workspace-full-vnc
-image:
-  file: Dockerfile
+# image:
+#   file: Dockerfile
+image: jchavarr/gitpod-featureide
 
 ports:
   - port: 6080
