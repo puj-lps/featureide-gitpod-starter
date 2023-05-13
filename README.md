@@ -1,3 +1,3 @@
-# Java Starter project
+# Feature-IDE Starter project
 
-Empty repository to start Java projects in Gitpod
+Empty repository to start Software Product Line projects in Gitpod using Feature IDE.
