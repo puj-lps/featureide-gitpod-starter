@@ -12,4 +12,4 @@ RUN sudo apt-get update \
 RUN wget https://github.com/FeatureIDE/FeatureIDE/releases/download/v3.9.1/eclipse4.20.0committers-featureide3.9.1-linux64.zip -O /tmp/eclipse.zip -q \
     && sudo unzip /tmp/eclipse.zip eclipse/* -d /opt \
     && rm /tmp/eclipse.zip
-#    && unzip /tmp/eclipse.zip workspace/*  \
+
