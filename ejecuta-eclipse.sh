@@ -1,3 +1,8 @@
 #!/bin/bash
 
-/opt/eclipse/eclipse -data ./workspace &
+BASEDIR=$(dirname "$0")
+
+/opt/eclipse/eclipse \
+    -perspective de.ovgu.featureide.ui.FeatureIDEperspective \
+    -data $BASEDIR/workspace \
+    &
