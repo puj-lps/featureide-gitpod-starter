@@ -4,7 +4,7 @@
 
 # Uso de imagen de Docker específica
 # ver: https://hub.docker.com/u/gitpod
-# image: gitpod/workspace-full-vnc
+
 # image:
 #   file: Dockerfile
 image: jchavarr/gitpod-featureide
@@ -13,12 +13,12 @@ ports:
   - port: 6080
     visibility: private
 
-
 # Comandos a ejecutar al inicio del proyecto
-# tasks:
-#
-#  - name: Ejecuta FeaureIDE
-#    command: /opt/eclipse/eclipse -data ./workspace &
+tasks:
+  - name: Ejecuta FeaureIDE
+    command: |
+      gp preview --external $(gp url 6080)
+      ./ejecuta-eclipse.sh
 
 # Extensiones
 vscode:
